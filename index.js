@@ -8,6 +8,7 @@ const port = process.env.PORT || 4000
 
 const app = express()
 
+app.use(express.static('client/build'))
 app.use(helmet())
 app.use(cors())
 app.use(express.json())
